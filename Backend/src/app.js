@@ -1,10 +1,11 @@
 const express = require("express")    //express ko require kiye express package se aur variable express mein daal diya
 
-app.set("trust proxy", 1)
+
 
 const cookieParser = require("cookie-parser")
 const app = express()     //app mein saare express se related chize store hai 
 
+app.set("trust proxy", 1)
 const cors = require('cors')
 
 
