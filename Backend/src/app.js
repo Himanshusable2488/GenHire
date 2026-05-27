@@ -15,7 +15,8 @@ app.use(cookieParser())
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://gen-hire-nine.vercel.app"
+  "https://gen-hire-nine.vercel.app",
+  "https://gen-hire-pj1dgaxpz-himanshusable2488s-projects.vercel.app"
 ];
 
 app.use(cors({
