@@ -10,8 +10,13 @@ const cors = require('cors')
 app.use(express.json())  //json body read karne ke kaam aata hai
 app.use(cookieParser())
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://gen-hire-nine.vercel.app"
+];
+
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:allowedOrigins,
     credentials:true
 }))
 
