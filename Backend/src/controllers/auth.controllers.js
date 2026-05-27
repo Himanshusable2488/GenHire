@@ -44,6 +44,7 @@ async function registerUserController(req, res){
     httpOnly: true,
     secure: isProduction,
     sameSite: isProduction ? "none" : "lax",
+    path: "/",
     maxAge: 24 * 60 * 60 * 1000
 })
 
@@ -90,6 +91,7 @@ res.cookie("token",token, {
     httpOnly: true,
     secure: isProduction,
     sameSite: isProduction ? "none" : "lax",
+    path: "/",
     maxAge: 24 * 60 * 60 * 1000
 })
 
@@ -120,6 +122,7 @@ async function logoutUserController(req, res){
     httpOnly: true,
     secure: isProduction,
     sameSite: isProduction ? "none" : "lax",
+    path:"/"
 })
     res.status(200).json({
         message:"user logged out successfully"
